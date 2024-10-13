@@ -60,7 +60,7 @@ public sealed class CountryType : AbbreviatedDescriptiveSmartEnum<CountryType>
     public static readonly CountryType CongoKinshasa = new(nameof(CongoKinshasa), 51, "CD", "Congo - Kinshasa");
     public static readonly CountryType CookIslands = new(nameof(CookIslands), 52, "CK", "Cook Islands");
     public static readonly CountryType CostaRica = new(nameof(CostaRica), 53, "CR");
-    public static readonly CountryType CoteDIvoire = new(nameof(CoteDIvoire), 54, "CI", "Côte d’Ivoire");
+    public static readonly CountryType CoteDIvoire = new(nameof(CoteDIvoire), 54, "CI", "Cote d'Ivoire");
     public static readonly CountryType Croatia = new(nameof(Croatia), 55, "HR");
     public static readonly CountryType Cuba = new(nameof(Cuba), 56, "CU");
     public static readonly CountryType Curacao = new(nameof(Curacao), 57, "CW", "Curaçao");
@@ -190,8 +190,8 @@ public sealed class CountryType : AbbreviatedDescriptiveSmartEnum<CountryType>
     public static readonly CountryType Romania = new(nameof(Romania), 181, "RO");
     public static readonly CountryType Russia = new(nameof(Russia), 182, "RU");
     public static readonly CountryType Rwanda = new(nameof(Rwanda), 183, "RW");
-    public static readonly CountryType Réunion = new(nameof(Réunion), 184, "RE");
-    public static readonly CountryType SaintBarthelemy = new(nameof(SaintBarthelemy), 185, "BL", "St. Barthélemy");
+    public static readonly CountryType Reunion = new(nameof(Reunion), 184, "RE");
+    public static readonly CountryType SaintBarthelemy = new(nameof(SaintBarthelemy), 185, "BL", "St. Barthelemy");
     public static readonly CountryType SaintHelena = new(nameof(SaintHelena), 186, "SH", "St. Helena");
     public static readonly CountryType SaintKittsAndNevis = new(nameof(SaintKittsAndNevis), 187, "KN", "St. Kitts & Nevis");
     public static readonly CountryType SaintLucia = new(nameof(SaintLucia), 188, "LC", "St. Lucia");
@@ -200,7 +200,7 @@ public sealed class CountryType : AbbreviatedDescriptiveSmartEnum<CountryType>
     public static readonly CountryType SaintVincentAndTheGrenadines = new(nameof(SaintVincentAndTheGrenadines), 191, "VC", "St. Vincent & Grenadines");
     public static readonly CountryType Samoa = new(nameof(Samoa), 192, "WS");
     public static readonly CountryType SanMarino = new(nameof(SanMarino), 193, "SM", "San Marino");
-    public static readonly CountryType SaoTomeAndPrincipe = new(nameof(SaoTomeAndPrincipe), 194, "ST", "São Tomé & Príncipe");
+    public static readonly CountryType SaoTomeAndPrincipe = new(nameof(SaoTomeAndPrincipe), 194, "ST", "Sao Tome & Principe");
     public static readonly CountryType SaudiArabia = new(nameof(SaudiArabia), 195, "SA");
     public static readonly CountryType Senegal = new(nameof(Senegal), 196, "SN");
     public static readonly CountryType Serbia = new(nameof(Serbia), 197, "RS");
