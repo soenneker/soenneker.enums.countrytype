@@ -1,4 +1,4 @@
-# Contributing to Soenneker.Enums.CountryType
+﻿# Contributing to Soenneker.Enums.CountryType
 
 We're excited that you're interested in contributing!
 
