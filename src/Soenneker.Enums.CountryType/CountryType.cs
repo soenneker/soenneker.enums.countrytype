@@ -234,7 +234,7 @@ public sealed class CountryType : AbbreviatedDescriptiveSmartEnum<CountryType>
     /// <summary>
     /// The curacao.
     /// </summary>
-    public static readonly CountryType Curacao = new(nameof(Curacao), 57, "CW", "Cura�ao");
+    public static readonly CountryType Curacao = new(nameof(Curacao), 57, "CW", "Curaçao");
     /// <summary>
     /// The cyprus.
     /// </summary>

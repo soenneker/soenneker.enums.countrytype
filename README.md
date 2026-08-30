@@ -5,23 +5,50 @@
 
 # Soenneker.Enums.CountryType
 
-An enumeration for countries from CLDR.
+A smart enum of countries and territories with stable numeric values, ISO 3166-1 alpha-2 abbreviations, and CLDR-style display names.
 
-## Install
+## Installation
 
 ```bash
 dotnet add package Soenneker.Enums.CountryType
 ```
 
-## What you get
+## Usage
 
-- `CountryType` — An enumeration for countries from CLDR.
+```csharp
+using Soenneker.Enums.CountryType;
 
-## API at a glance
+CountryType country = CountryType.UnitedStates;
 
-| API | What it does | Result / important behavior |
-| --- | --- | --- |
-| `CountryType.BritishIndianOceanTerritory` | The british indian ocean territory. | The british indian ocean territory. |
-| `CountryType.HeardIslandAndMcDonaldIslands` | The heard island and mc donald islands. | The heard island and mc donald islands. |
-| `CountryType.SaintVincentAndTheGrenadines` | The saint vincent and the grenadines. | The saint vincent and the grenadines. |
-| `CountryType.SouthGeorgiaAndSouthSandwichIslands` | The south georgia and south sandwich islands. | The south georgia and south sandwich islands. |
+string name = country.Name;                 // "UnitedStates"
+int value = country.Value;                  // 235
+string code = country.Abbreviation;         // "US"
+string displayName = country.Description;   // "United States"
+```
+
+Look up a country by its two-letter code:
+
+```csharp
+CountryType canada = CountryType.FromAbbreviation("CA");
+
+if (CountryType.TryFromAbbreviation(input, ignoreCase: true, out CountryType? country))
+{
+    Console.WriteLine(country.Description);
+}
+```
+
+`FromAbbreviation` throws when the code is unknown. Use `TryFromAbbreviation` for user or external input.
+
+The inherited smart-enum APIs are also available for names and numeric values:
+
+```csharp
+CountryType germany = CountryType.FromName("Germany");
+CountryType france = CountryType.FromValue(76);
+
+foreach (CountryType option in CountryType.List)
+{
+    Console.WriteLine($"{option.Abbreviation}: {option.Description}");
+}
+```
+
+`Name` is the C# identifier used by the enum entry, while `Description` is intended for display. They differ for entries such as `UnitedStates` / `United States`; use `Abbreviation` when exchanging ISO country codes.
